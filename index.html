@@ -8,6 +8,7 @@
     body, html {
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
     .video-section {
@@ -33,7 +34,6 @@
     .content {
       padding: 40px;
       text-align: center;
-      font-family: Arial, sans-serif;
     }
 
     .divider {
@@ -46,10 +46,15 @@
     .gif-section {
       width: 100%;
       height: 500px;
-      background-image: url("https://i.pinimg.com/originals/8a/e1/04/8ae104a88d8fd8e5c4d1a9cbea4d4c96.gif"); /* replace with your GIF URL */
+      background-image: url("https://i.pinimg.com/originals/8a/e1/04/8ae104a88d8fd8e5c4d1a9cbea4d4c96.gif");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .long-text {
+      padding: 40px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -57,7 +62,9 @@
 
   <!-- Video background section -->
   <div class="video-section">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline
+    poster="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-vib-inkythuatso-3-21-13-44-34.jpg"
+    >
       <source src="https://player.vimeo.com/progressive_redirect/playback/1113134676/rendition/1080p/file.mp4?loc=external&log_user=0&signature=a46be27ac2d73d56da24812c3f11a88e8a8f2570d81dfbf3a6ab1f6d313e7e49" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -74,6 +81,24 @@
 
   <!-- GIF section -->
   <div class="gif-section"></div>
+
+  <!-- Long body text -->
+  <div class="long-text">
+    <h2>More Information</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ligula ac nisi viverra posuere. 
+       Nullam porttitor lectus a purus pharetra, ac gravida metus facilisis. Morbi ullamcorper justo non 
+       ullamcorper faucibus. In euismod, orci sed blandit imperdiet, orci arcu aliquet elit, sed suscipit 
+       nisl dui et nulla.</p>
+
+    <p>Praesent dignissim lacus at mauris pharetra, vitae tempor ipsum venenatis. Nulla facilisi. 
+       Suspendisse fringilla ligula vel lorem euismod, vel vulputate lorem fermentum. Duis condimentum 
+       lorem ac augue cursus malesuada. Etiam vel volutpat libero. Integer eget dui nec felis pulvinar 
+       cursus sed ut nunc.</p>
+
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+       Mauris in odio urna. Sed viverra eros at justo efficitur, sit amet accumsan nunc placerat. 
+       Aliquam erat volutpat. Integer venenatis libero a libero pretium, nec posuere magna tincidunt.</p>
+  </div>
 
 </body>
 </html>
